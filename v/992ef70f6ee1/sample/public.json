@@ -1,0 +1,257 @@
+{
+ "at": "2026-10-26T09:00:00.000Z",
+ "profs": [
+  {
+   "id": "p-hong",
+   "name": "홍길동",
+   "dept": "컴퓨터소프트웨어과",
+   "badge": {
+    "img": "badges/p-hong.png",
+    "date": "2026-10-20"
+   },
+   "apps": [
+    {
+     "id": "a-qna01",
+     "name": "수업 질문 도우미",
+     "url": "https://example.com/qna-helper",
+     "level": 3,
+     "desc": "강의 자료를 읽은 AI가 학생 질문에 먼저 답해 줍니다.",
+     "at": "2026-10-20T05:10:00.000Z",
+     "shots": [
+      {
+       "src": "shots/a-qna01-1.webp",
+       "w": 1280,
+       "h": 800,
+       "thumb": "shots/a-qna01-1.t.webp",
+       "tw": 640,
+       "th": 400
+      },
+      {
+       "src": "shots/a-qna01-2.webp",
+       "w": 720,
+       "h": 1558,
+       "thumb": "shots/a-qna01-2.t.webp",
+       "tw": 360,
+       "th": 779
+      }
+     ],
+     "github": "https://github.com/example/qna-helper"
+    },
+    {
+     "id": "a-seat01",
+     "name": "실습실 좌석 예약",
+     "url": "https://example.com/lab-seat",
+     "level": 2,
+     "desc": "실습실 자리를 미리 잡고 출석까지 한 번에 확인합니다.",
+     "at": "2026-10-12T02:00:00.000Z",
+     "shots": [
+      {
+       "src": "shots/a-seat01-1.webp",
+       "w": 1280,
+       "h": 800,
+       "thumb": "shots/a-seat01-1.t.webp",
+       "tw": 640,
+       "th": 400
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p-kimy",
+   "name": "김예시",
+   "dept": "간호학과",
+   "badge": {
+    "img": "badges/p-kimy.png",
+    "date": "2026-10-22"
+   },
+   "apps": [
+    {
+     "id": "a-quiz01",
+     "name": "간호 술기 퀴즈 코치",
+     "url": "https://example.com/nursing-quiz",
+     "level": 3,
+     "desc": "틀린 문제를 AI가 다시 설명하고 비슷한 문제를 냅니다.",
+     "at": "2026-10-22T07:30:00.000Z",
+     "shots": [
+      {
+       "src": "shots/a-quiz01-1.webp",
+       "w": 720,
+       "h": 1558,
+       "thumb": "shots/a-quiz01-1.t.webp",
+       "tw": 360,
+       "th": 779
+      },
+      {
+       "src": "shots/a-quiz01-2.webp",
+       "w": 1280,
+       "h": 800,
+       "thumb": "shots/a-quiz01-2.t.webp",
+       "tw": 640,
+       "th": 400
+      }
+     ]
+    },
+    {
+     "id": "a-plan01",
+     "name": "임상 실습 일정표",
+     "url": "https://example.com/clinical-plan",
+     "level": 1,
+     "desc": "실습 병원과 날짜를 한 화면에서 봅니다.",
+     "at": "2026-09-30T01:00:00.000Z",
+     "shots": [
+      {
+       "src": "shots/a-plan01-1.webp",
+       "w": 1280,
+       "h": 800,
+       "thumb": "shots/a-plan01-1.t.webp",
+       "tw": 640,
+       "th": 400
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p-lees",
+   "name": "이샘플",
+   "dept": "유아교육과",
+   "badge": {
+    "img": "badges/p-lees.png",
+    "date": "2026-10-05"
+   },
+   "apps": [
+    {
+     "id": "a-play01",
+     "name": "놀이 활동 기록장",
+     "url": "https://example.com/play-log",
+     "level": 2,
+     "desc": "아이들 놀이 관찰을 적고 주간 보고서로 모읍니다.",
+     "at": "2026-10-18T03:00:00.000Z",
+     "shots": [
+      {
+       "src": "shots/a-play01-1.webp",
+       "w": 1280,
+       "h": 800,
+       "thumb": "shots/a-play01-1.t.webp",
+       "tw": 640,
+       "th": 400
+      }
+     ]
+    },
+    {
+     "id": "a-rent01",
+     "name": "교구 대여 관리",
+     "url": "https://example.com/toy-rent",
+     "level": 2,
+     "desc": "교구를 빌리고 돌려준 날짜를 기록합니다.",
+     "at": "2026-10-05T03:00:00.000Z",
+     "shots": [
+      {
+       "src": "shots/a-rent01-1.webp",
+       "w": 720,
+       "h": 1558,
+       "thumb": "shots/a-rent01-1.t.webp",
+       "tw": 360,
+       "th": 779
+      }
+     ]
+    },
+    {
+     "id": "a-note01",
+     "name": "학부모 안내문 모음",
+     "url": "https://example.com/notice-box",
+     "level": 1,
+     "desc": "학기별 안내문을 한곳에 모아 보여 줍니다.",
+     "at": "2026-09-25T03:00:00.000Z",
+     "shots": [
+      {
+       "src": "shots/a-note01-1.webp",
+       "w": 1280,
+       "h": 800,
+       "thumb": "shots/a-note01-1.t.webp",
+       "tw": 640,
+       "th": 400
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p-park",
+   "name": "박가상",
+   "dept": "호텔식음료서비스학과",
+   "badge": {
+    "img": "badges/p-park.png",
+    "date": "2026-10-15"
+   },
+   "apps": [
+    {
+     "id": "a-cock01",
+     "name": "칵테일 레시피 카드",
+     "url": "https://example.com/cocktail-cards",
+     "level": 1,
+     "desc": "재료와 만드는 순서를 카드로 넘겨 봅니다.",
+     "at": "2026-10-15T03:00:00.000Z",
+     "shots": [
+      {
+       "src": "shots/a-cock01-1.webp",
+       "w": 720,
+       "h": 1558,
+       "thumb": "shots/a-cock01-1.t.webp",
+       "tw": 360,
+       "th": 779
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p-choi",
+   "name": "최시범",
+   "dept": "전기과",
+   "badge": {
+    "img": "badges/p-choi.png",
+    "date": "2026-10-10"
+   },
+   "apps": [
+    {
+     "id": "a-safe01",
+     "name": "안전 점검 체크리스트",
+     "url": "https://example.com/safety-check",
+     "level": 1,
+     "desc": "실습 전 안전 점검 항목을 차례로 확인합니다.",
+     "at": "2026-10-21T03:00:00.000Z",
+     "shots": [
+      {
+       "src": "shots/a-safe01-1.webp",
+       "w": 1280,
+       "h": 800,
+       "thumb": "shots/a-safe01-1.t.webp",
+       "tw": 640,
+       "th": 400
+      }
+     ]
+    },
+    {
+     "id": "a-sym01",
+     "name": "전기 기호 암기장",
+     "url": "https://example.com/symbol-cards",
+     "level": 1,
+     "desc": "기호를 보고 이름을 맞히는 연습 화면입니다.",
+     "at": "2026-10-10T03:00:00.000Z",
+     "shots": [
+      {
+       "src": "shots/a-sym01-1.webp",
+       "w": 720,
+       "h": 1558,
+       "thumb": "shots/a-sym01-1.t.webp",
+       "tw": 360,
+       "th": 779
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
