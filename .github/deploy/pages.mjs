@@ -61,8 +61,11 @@ async function freshCommit(api, repoApi, env) {
   return made.sha;
 }
 
-/** 새 배포를 만들고 끝날 때까지 기다린다 → { pageUrl, version }. 실패·시간 초과면 던진다(시간 초과는 배포도 취소). */
-export async function deployPages({ env, fetchFn = fetch, sleep = wait, now = Date.now, log = console.log, intervalMs = 3000, timeoutMs = 8 * 60e3, maxErrors = 10 }) {
+/**
+ * 새 배포를 만들고 끝날 때까지 기다린다 → { pageUrl, version }. 실패·시간 초과면 던진다(시간 초과는 배포도 취소).
+ * 기다림 6분: deploy.yml 일 시간 10분 안에서 취소와 정리 단계까지 돌게 한다.
+ */
+export async function deployPages({ env, fetchFn = fetch, sleep = wait, now = Date.now, log = console.log, intervalMs = 3000, timeoutMs = 6 * 60e3, maxErrors = 10 }) {
   const artifactId = Number(env.ARTIFACT_ID);
   if (!Number.isSafeInteger(artifactId) || artifactId <= 0) throw new Error(`산출물 번호가 없습니다: ${env.ARTIFACT_ID}`);
   if (!/^[\w.-]+\/[\w.-]+$/.test(env.GITHUB_REPOSITORY || '')) throw new Error(`저장소 이름이 틀립니다: ${env.GITHUB_REPOSITORY}`);
