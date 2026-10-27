@@ -10,7 +10,7 @@ import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const TAG_RE = /^data-(\d{13})$/;
-const ENTRY_RE = /^(public\.\d{13}\.json|shots\/[A-Za-z0-9][A-Za-z0-9._-]{0,120}\.webp|badges\/[A-Za-z0-9][A-Za-z0-9._-]{0,120}\.png|shots\/|badges\/)$/;
+export const ENTRY_RE = /^(public\.\d{13}\.json|shots\/[A-Za-z0-9][A-Za-z0-9._-]{0,120}\.webp|badges\/[A-Za-z0-9][A-Za-z0-9._-]{0,120}\.png|shots\/|badges\/)$/;
 
 /** 초안 릴리스의 데이터 버전(13자리) — 초안이 아니거나 이름이 틀리면 '' */
 export function draftTs(rel) {
