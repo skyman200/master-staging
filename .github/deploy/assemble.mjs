@@ -87,7 +87,7 @@ async function listReleases(repo, wantId) {
 async function liveDataTs(repo) {
   const [owner, name] = repo.split('/');
   try {
-    const res = await fetch(`https://${owner}.github.io/${name}/version.json?t=${Date.now()}`, { cache: 'no-store' });
+    const res = await fetch(`https://${owner}.github.io/${name}/version.json`, { cache: 'no-store' });
     if (res.status === 404) return '';
     if (!res.ok) return null;
     const v = await res.json();

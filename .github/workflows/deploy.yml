@@ -2,6 +2,7 @@
 # - main 에 화면이 올라오면(push) 가장 최근 공개 데이터 초안과 함께 배포한다.
 # - 2호기가 승인·비공개를 반영하려고 부를 때(workflow_dispatch, release_id)도 같은 길로 배포한다.
 # 캡처·공개 데이터는 git 에 들어가지 않는다(초안 릴리스 첨부 파일 → Pages 산출물). 배포 뒤 산출물과 오래된 초안은 지운다.
+# Pages 배포는 actions/deploy-pages 대신 .github/deploy/pages.mjs 가 한다: 같은 커밋에서 거듭 배포해도 실행마다 다른 배포 이름을 쓴다.
 name: deploy
 
 on:
@@ -47,7 +48,11 @@ jobs:
           retention-days: 1
 
       - id: deploy
-        uses: actions/deploy-pages@v5
+        name: Pages 에 배포
+        run: node .github/deploy/pages.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
 
       - name: 산출물과 오래된 초안 지우기
         run: |
